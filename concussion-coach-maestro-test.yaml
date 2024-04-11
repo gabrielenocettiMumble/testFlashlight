@@ -1,0 +1,80 @@
+# flow.yaml
+
+
+#   flashlight test --bundleId gov.va.mobilehealth.ncptsd.concussioncoach --testCommand "maestro test concussion-coach-maestro-test.yaml" --duration 10000 --resultsFilePath results.json
+
+appId: gov.va.mobilehealth.ncptsd.concussioncoach
+---
+- launchApp
+
+- tapOn: Continue
+
+- tapOn: Continue
+
+- tapOn: Sleep
+
+- swipe:
+    start: 48%,84%
+    end: 50%,52%
+    duration: 629
+
+- tapOn: Managing Irritability
+
+- swipe:
+    start: 52%,81%
+    end: 52%,20%
+    duration: 755
+
+- tapOn: Continue
+
+- tapOn: Start
+
+- tapOn: Tools
+
+- tapOn: Got it
+
+- tapOn: "Improve Mood Topic Area: not selected"
+
+- swipe:
+    start: 25%,76%
+    end: 100%,21%
+    duration: 100
+
+- swipe:
+    start: 90%,21%
+    end: 15%,80%
+    duration: 100
+
+- tapOn: "Enhance Relationships Topic Area: not selected"
+
+- swipe:
+    start: 25%,76%
+    end: 100%,21%
+    duration: 100
+
+- swipe:
+    start: 75%,21%
+    end: 15%,80%
+    duration: 100
+
+- tapOn: Learn
+
+- swipe:
+      start: 25%,76%
+      end: 100%,21%
+      duration: 100
+
+- swipe:
+      start: 49%,36%
+      end: 48%,100%
+      duration: 100
+
+- tapOn: Menu
+
+- tapOn: Got it
+
+- tapOn: Got it
+
+- tapOn: Got it
+
+- clearState
